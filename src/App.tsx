@@ -1,8 +1,10 @@
 // import Accordion from "./components/Accordion";
-// import { accordionData } from "./constants/data";
 // import ColorGenerator from "./components/ColorGenerator";
+// import StarRating from "./components/StarRating";
 
-import StarRating from "./components/StarRating";
+import Slider from "./components/Slider";
+
+// import { accordionData } from "./constants/data";
 
 function App() {
   return (
@@ -14,7 +16,10 @@ function App() {
       {/* <ColorGenerator /> */}
 
       {/* Star Rating */}
-      <StarRating numOfStars={10} />
+      {/* <StarRating numOfStars={10} /> */}
+
+      {/* Image Slider */}
+      <Slider url="https://picsum.photos/v2/list" />
     </>
   );
 }
