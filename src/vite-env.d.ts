@@ -5,3 +5,9 @@ export interface AccordionData {
   title: string;
   content: string;
 }
+
+export type ViewItem = {
+  label: string;
+  to: string;
+  children?: MenuItem[];
+};
