@@ -3,15 +3,17 @@
 // import StarRating from "./components/StarRating";
 // import Slider from "./components/Slider";
 // import Products from "./components/products/Products";
-
 // import Menu from "./components/menu/Menu";
+
+import ThemeTogglePage from "./components/theme/ThemeTogglePage";
+import { ThemeProvider } from "./context/ThemeContext";
 
 // import { accordionData } from "./constants/data;
 // import { menuData } from "./constants/data";
 
 function App() {
   return (
-    <>
+    <ThemeProvider>
       {/* <RouterProvider router={router} /> */}
 
       {/* Accordion */}
@@ -31,7 +33,10 @@ function App() {
 
       {/* Tree View / Menu UI / Recursive Navigation Menu */}
       {/* <Menu data={menuData} /> */}
-    </>
+
+      {/* Light and Dark Mode / Theme Switch / Dark Theme */}
+      <ThemeTogglePage />
+    </ThemeProvider>
   );
 }
 

@@ -30,4 +30,12 @@ body {
   .color-btn {
     @apply px-3 py-2 shadow-lg border-black rounded-md;
   }
+
+  .background-light_dark {
+    @apply bg-white dark:bg-black;
+  }
+
+  .text-light_dark {
+    @apply text-black dark:text-white;
+  }
 }
